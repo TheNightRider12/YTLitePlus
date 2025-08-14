@@ -33,6 +33,7 @@ YTLitePlus_EMBED_EXTENSIONS = $(wildcard Extensions/*.appex)
 YTLitePlus_IPA = ./tmp/Payload/YouTube.app
 YTLitePlus_CFLAGS = -fobjc-arc -Wno-deprecated-declarations -Wno-unsupported-availability-guard -Wno-unused-but-set-variable -DTWEAK_VERSION=$(PACKAGE_VERSION) $(EXTRA_CFLAGS)
 YTLitePlus_USE_FISHHOOK = 0
+YTLitePlus_LIBRARIES = undirect
 
 include $(THEOS)/makefiles/common.mk
 ifneq ($(JAILBROKEN),1)
